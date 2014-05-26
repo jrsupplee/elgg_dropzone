@@ -42,7 +42,9 @@ function init() {
 	elgg_register_action('dropzone/upload', $actions_path . 'dropzone/upload.php');
 
 	// Making things pretty
+	elgg_unextend_view('page/elements/head', 'framework/fonts/font-awesome');
 	elgg_extend_view('page/elements/head', 'framework/fonts/font-awesome');
+	elgg_unextend_view('page/elements/head', 'framework/fonts/open-sans');
 	elgg_extend_view('page/elements/head', 'framework/fonts/open-sans');
 	
 }
